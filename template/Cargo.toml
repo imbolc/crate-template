@@ -1,0 +1,10 @@
+[package]
+description = "{{project-description}}"
+edition = "2021"
+license = "MIT"
+name = "{{project-name}}"
+repository = "https://github.com/{{github-user}}/{{project-name}}"
+version = "0.1.0"
+
+[dependencies]
+rusty-hook = "0.11"
