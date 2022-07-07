@@ -1,3 +1,5 @@
+//! # {{project-name}}
+//!
 //! {{project-description}}
 
 #![warn(clippy::all, missing_docs, nonstandard_style, future_incompatible)]

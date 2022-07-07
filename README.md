@@ -3,8 +3,9 @@ Crate template
 
 A [cargo-generate][] template for a library crate including:
 
-* [cargo-readme]
+* [cargo-readme-sync]
 * [rusty-hook]
+* github actions
 * badges
 * MIT license
 
@@ -16,5 +17,5 @@ cargo generate --git https://github.com/imbolc/crate-template.git --name my-crat
 ```
 
 [cargo-generate]: https://github.com/cargo-generate/cargo-generate
-[cargo-readme]: https://github.com/livioribeiro/cargo-readme
+[cargo-readme-sync]: https://github.com/phaazon/cargo-sync-readme
 [rusty-hook]: https://github.com/swellaby/rusty-hook
