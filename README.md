@@ -15,8 +15,9 @@ Usage
 ```bash
 cargo install cargo-generate cargo-readme rusty-hook typos-cli
 read -p "Enter the crate name: " crate
-cargo generate --git https://github.com/imbolc/crate-template.git --name crate
-cd ./crate
+cargo generate --git https://github.com/imbolc/crate-template.git --name $crate
+cd ./$crate
+git init
 rusty-hook init
 ```
 
