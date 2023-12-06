@@ -6,7 +6,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -24,7 +24,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -35,7 +35,7 @@ jobs:
   readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -52,7 +52,7 @@ jobs:
   typos:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -65,3 +65,18 @@ jobs:
 
       - name: Any typos?
         run: typos
+
+    cargo_sort:
+      runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions-rs/toolchain@v1
+          with:
+            toolchain: stable
+
+        - name: Install cargo-sort
+          run: cargo install cargo-sort
+
+        - name: Are Cargo configs sorted?
+          run: cargo sort -c
