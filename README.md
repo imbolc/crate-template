@@ -19,5 +19,4 @@ cd ./$crate && ./.pre-commit.sh
 ```
 
 [cargo-generate]: https://github.com/cargo-generate/cargo-generate
-[cargo-readme-sync]: https://github.com/phaazon/cargo-sync-readme
 [typos]: https://github.com/crate-ci/typos 
