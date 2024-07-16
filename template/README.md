@@ -6,7 +6,8 @@
 
 ## Contributing
 
-We appreciate all kinds of contributions, thank you!
+- please run [.pre-commit.sh] before sending a PR, it will check everything
+
 
 
 ### Note on README
@@ -25,12 +26,9 @@ cargo sync-readme
 cargo install cargo-sync-readme
 ```
 
-If you have [rusty-hook] installed the changes will apply automatically on commit.
-
-
 ## License
 
 This project is licensed under the [MIT license](LICENSE).
 
 [cargo-sync-readme]: https://github.com/phaazon/cargo-sync-readme
-[rusty-hook]: https://github.com/swellaby/rusty-hook
+[.pre-commit.sh]: https://github.com/{{github-user}}/{{project-name}}/blob/main/pre-commit.sh

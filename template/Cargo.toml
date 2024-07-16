@@ -7,6 +7,3 @@ repository = "https://github.com/{{github-user}}/{{project-name}}"
 version = "0.1.0"
 
 [dependencies]
-
-[dev-dependencies]
-rusty-hook = "0.11"
