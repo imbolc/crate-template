@@ -7,3 +7,33 @@ repository = "https://github.com/{{github-user}}/{{project-name}}"
 version = "0.1.0"
 
 [dependencies]
+
+[lints.rust]
+unsafe_code = "forbid"
+future_incompatible = "forbid"
+keyword_idents = "forbid"
+let_underscore = "forbid"
+missing_docs = "forbid"
+nonstandard_style = "forbid"
+refining_impl_trait = "forbid"
+rust_2018_compatibility = "forbid"
+rust_2018_idioms = "forbid"
+rust_2021_compatibility = "forbid"
+rust_2024_compatibility = "forbid"
+unreachable_pub = "forbid"
+unused = "forbid"
+
+[lints.clippy]
+all = "forbid"
+complexity = "forbid"
+expect_used = "forbid"
+indexing_slicing = "forbid"
+panic = "forbid"
+pedantic = "forbid"
+perf = "forbid"
+style = "forbid"
+suspicious = "forbid"
+todo = "forbid"
+unimplemented = "forbid"
+unwrap_used = "forbid"
+nursery = "warn"
