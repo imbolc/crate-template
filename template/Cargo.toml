@@ -36,4 +36,4 @@ suspicious = "forbid"
 todo = "forbid"
 unimplemented = "forbid"
 unwrap_used = "forbid"
-nursery = "warn"
+nursery = { level = "warn", priority = -1 }
