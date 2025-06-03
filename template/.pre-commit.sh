@@ -8,8 +8,8 @@ HOOK_PATH=$(git rev-parse --git-dir)/hooks/pre-commit
 
 if [ "$(realpath "$HOOK_PATH")" != "$SCRIPT_PATH" ]; then
     printf "Link this script as the git pre-commit hook to avoid further manual running? (y/N): "
-    read -r __link
-    case "$__link" in
+    read -r link_hook
+    case "$link_hook" in
     [Yy])
         ln -sf "$SCRIPT_PATH" "$HOOK_PATH"
         ;;
