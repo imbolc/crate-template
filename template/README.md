@@ -6,15 +6,14 @@
 
 {{project-description}}
 
-
 ## Contributing
 
 - please run [.pre-commit.sh] before sending a PR, it will check everything
-
 
 ## License
 
 This project is licensed under the [MIT license][license].
 
-[.pre-commit.sh]: https://github.com/{{github-user}}/{{project-name}}/blob/main/pre-commit.sh
+[.pre-commit.sh]:
+  https://github.com/{{github-user}}/{{project-name}}/blob/main/.pre-commit.sh
 [license]: https://github.com/{{github-user}}/{{project-name}}/blob/main/LICENSE
