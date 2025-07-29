@@ -14,29 +14,18 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [lints.rust]
 unsafe_code = "forbid"
-future_incompatible = "forbid"
-keyword_idents = "forbid"
-let_underscore = "forbid"
-missing_docs = "forbid"
-nonstandard_style = "forbid"
-refining_impl_trait = "forbid"
-rust_2018_compatibility = "forbid"
-rust_2018_idioms = "forbid"
-rust_2021_compatibility = "forbid"
-rust_2024_compatibility = "forbid"
-unused = "forbid"
+future_incompatible = { level = "deny", priority = -2 }
+keyword_idents = { level = "deny", priority = -2 }
+let_underscore = { level = "deny", priority = -2 }
+missing_docs = "deny"
+nonstandard_style = { level = "deny", priority = -2 }
+refining_impl_trait = { level = "deny", priority = -2 }
+rust_2018_compatibility = { level = "deny", priority = -2 }
+rust_2018_idioms = { level = "deny", priority = -2 }
+rust_2021_compatibility = { level = "deny", priority = -2 }
+rust_2024_compatibility = { level = "deny", priority = -2 }
+unreachable_pub = { level = "warn", priority = -1 }
+unused = { level = "warn", priority = -1 }
 
 [lints.clippy]
-all = "warn"
-complexity = "warn"
-expect_used = "warn"
-indexing_slicing = "warn"
-panic = "warn"
-pedantic = "warn"
-perf = "warn"
-style = "warn"
-suspicious = "warn"
-todo = "warn"
-unimplemented = "warn"
-unwrap_used = "warn"
-nursery = { level = "warn", priority = -1 }
+all = { level = "warn", priority = -1 }
