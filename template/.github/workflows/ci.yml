@@ -96,7 +96,7 @@ jobs:
       - name: Check `Cargo.toml` sort
         run: cargo sort -c
 
-  machete:
+  shear:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -107,8 +107,8 @@ jobs:
         with:
           toolchain: stable
 
-      - name: Install `cargo-machete`
-        run: cargo install --locked cargo-machete
+      - name: Install `cargo-shear`
+        run: cargo install --locked cargo-shear
 
       - name: Check unused Cargo dependencies
-        run: cargo machete
+        run: cargo shear

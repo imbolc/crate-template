@@ -11,7 +11,7 @@ A [cargo-generate][] template for a library crate including:
 - Clippy warnings
 - Tests
 - Nightly `rustfmt` with wrapped comments and grouped imports
-- Unused Cargo dependencies with [cargo-machete][]
+- Unused Cargo dependencies with [cargo-shear][]
 - [Typos][typos]
 - `Cargo.toml` sorting with [cargo-sort][]
 
@@ -26,6 +26,6 @@ git add . && git commit -m'Init'
 ```
 
 [cargo-generate]: https://github.com/cargo-generate/cargo-generate
-[cargo-machete]: https://github.com/bnjbvr/cargo-machete
+[cargo-shear]: https://github.com/Boshen/cargo-shear
 [cargo-sort]: https://github.com/DevinR528/cargo-sort
 [typos]: https://github.com/crate-ci/typos
